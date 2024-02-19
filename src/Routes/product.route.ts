@@ -24,34 +24,4 @@ export default router;
 
 
 
-// const express = require("express");
-// const productRoute = express();
 
-// const bodyParser = require("body-parser");
-// productRoute.use(bodyParser.json());
-// productRoute.use(bodyParser.urlencoded({ extended: true })); // this encodes the URL
-
-// const multer = require("multer");
-// const path = require("path");
-// productRoute.use(express.static("public")); // use the public folder to store images
-
-// const storage = multer.diskStorage({
-//     destination: function (req, file, cb) {
-//         cb(null, path.join(__dirname, "../public/productImg"), function(err) {
-//             if(err) {
-//                 throw err;
-//             }
-//         });
-//     },
-//     filename: function (req, file, cb) {
-//         const name = Date.now() + "-" + file.originalname;
-//         cb(null, name, function(err) {
-//             if(err) {
-//                 throw err;
-//             }
-//         });
-//     }
-    
-//     });
-
-//     const upload = multer({ storage: storage }); // to use Storage defined above
